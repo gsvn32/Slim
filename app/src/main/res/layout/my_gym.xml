@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="GYM DETAILS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="19dp"
+        android:id="@+id/gymd"
+        android:textSize="30sp" />
+
+    <TextView
+        android:text="Name :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gymd"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="31dp"
+        android:id="@+id/gname1"
+        android:textSize="24sp" />
+
+    <TextView
+        android:text="The KettleBell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/gname1"
+        android:layout_toEndOf="@+id/gname1"
+        android:layout_marginStart="29dp"
+        android:id="@+id/gname2"
+        android:textSize="24sp" />
+
+    <TextView
+        android:text="Address :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gname1"
+        android:layout_alignStart="@+id/gname1"
+        android:layout_marginTop="34dp"
+        android:id="@+id/gaddress1"
+        android:textSize="24sp" />
+
+    <TextView
+        android:text="Independent PresByterian Communion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:id="@+id/gaddress2"
+        android:textSize="24sp"
+        android:layout_below="@+id/gaddress1"
+        android:layout_alignStart="@+id/gaddress1" />
+
+    <TextView
+        android:text="4645 Walnut Grove Road"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gaddress2"
+        android:layout_alignStart="@+id/gaddress2"
+        android:layout_marginTop="25dp"
+        android:id="@+id/gaddline2"
+        android:textSize="24sp" />
+
+    <TextView
+        android:text="Memphis,TN 38117"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gaddline2"
+        android:layout_alignStart="@+id/gaddline2"
+        android:layout_marginTop="19dp"
+        android:id="@+id/gaddline3"
+        android:textSize="24sp" />
+
+    <TextView
+        android:text="Contact Details :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:id="@+id/textView13"
+        android:textSize="24sp"
+        android:layout_below="@+id/gaddline3"
+        android:layout_alignStart="@+id/gaddline3" />
+
+    <TextView
+        android:text="ipc@wgba.com"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView13"
+        android:layout_alignStart="@+id/textView13"
+        android:layout_marginTop="22dp"
+        android:id="@+id/textView15"
+        android:textSize="24sp" />
+
+</RelativeLayout>

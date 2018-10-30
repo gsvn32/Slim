@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+
+        android:layout_marginStart="134dp"
+        android:id="@+id/upo"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp" />
+
+    <TextView
+        android:text="USER_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/upo"
+
+        android:layout_alignParentStart="true"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="35dp"
+        android:id="@+id/USERIDTEXT" />
+
+    <TextView
+        android:text="FIEST NAME"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editUSERID2"
+
+        android:layout_alignStart="@+id/USERIDTEXT"
+        android:layout_marginTop="16dp"
+        android:id="@+id/textFNAME" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Alphanumeric"
+        android:ems="10"
+        android:id="@+id/editUSERID2"
+        android:layout_alignBaseline="@+id/USERIDTEXT"
+        android:layout_alignBottom="@+id/USERIDTEXT"
+
+        android:layout_alignStart="@+id/upo"
+
+        android:layout_marginStart="29dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="First Name"
+        android:ems="10"
+        android:id="@+id/editFNAME2"
+        android:layout_alignBaseline="@+id/textFNAME"
+        android:layout_alignBottom="@+id/textFNAME"
+
+        android:layout_alignStart="@+id/editUSERID2" />
+
+    <TextView
+        android:text="LAST NAME"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textLNAME"
+        android:layout_below="@+id/editFNAME2"
+
+        android:layout_alignStart="@+id/textFNAME"
+        android:layout_marginTop="11dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Last Name"
+        android:ems="10"
+        android:layout_below="@+id/editFNAME2"
+
+        android:layout_alignStart="@+id/editFNAME2"
+        android:id="@+id/editLNAME2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="M or F Only"
+        android:ems="10"
+        android:layout_below="@+id/editLNAME2"
+
+        android:layout_alignStart="@+id/editLNAME2"
+        android:id="@+id/editGENDER2" />
+
+    <TextView
+        android:text="GENDER"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textGENDER"
+        android:layout_alignBaseline="@+id/editGENDER2"
+        android:layout_alignBottom="@+id/editGENDER2"
+
+        android:layout_alignStart="@+id/textLNAME" />
+
+    <TextView
+        android:text="AGE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textAGE"
+        android:layout_below="@+id/editGENDER2"
+
+        android:layout_alignStart="@+id/textGENDER"
+        android:layout_marginTop="12dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:layout_below="@+id/editGENDER2"
+
+        android:layout_alignStart="@+id/editGENDER2"
+        android:id="@+id/editAGE2" />
+
+    <TextView
+        android:text="HEIGHT(cm)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editAGE2"
+
+        android:layout_alignStart="@+id/textAGE"
+        android:layout_marginTop="16dp"
+        android:id="@+id/textHEIGHT" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+
+        android:ems="10"
+        android:layout_below="@+id/editAGE2"
+
+        android:layout_alignStart="@+id/editAGE2"
+        android:id="@+id/editHEIGHT2" />
+
+    <TextView
+        android:text="EMAIL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editHEIGHT2"
+
+        android:layout_alignStart="@+id/textHEIGHT"
+        android:layout_marginTop="11dp"
+        android:id="@+id/textEMAIL" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:text=""
+        android:ems="10"
+        android:layout_below="@+id/editHEIGHT2"
+        android:hint="Email Address"
+        android:layout_alignStart="@+id/editHEIGHT2"
+        android:id="@+id/editEMAIL2"
+        tools:visibility="visible"
+        android:singleLine="true"
+        android:selectAllOnFocus="true" />
+
+    <TextView
+        android:text="PASSWORD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textPASSWD"
+        android:layout_below="@+id/editEMAIL2"
+        android:layout_alignLeft="@+id/textEMAIL"
+        android:layout_alignStart="@+id/textEMAIL"
+        android:layout_marginTop="14dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_below="@+id/editEMAIL2"
+
+        android:layout_alignStart="@+id/editEMAIL2"
+        android:id="@+id/editPASSWD2"
+        android:text=""
+        android:singleLine="true"
+        android:selectAllOnFocus="true" />
+
+    <TextView
+        android:text="WEIGHT(kg)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textWEIGHT"
+        android:layout_below="@+id/editPASSWD2"
+
+        android:layout_alignStart="@+id/textPASSWD"
+        android:layout_marginTop="14dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:text=""
+        android:ems="10"
+        android:layout_below="@+id/editPASSWD2"
+
+        android:layout_alignStart="@+id/editPASSWD2"
+        android:id="@+id/editWEIGHT2" />
+
+    <Button
+        android:text="SUBMIT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/SUBMIT"
+        android:elevation="3dp"
+        android:layout_below="@+id/editWEIGHT2"
+        android:layout_alignStart="@+id/upo" />
+
+</RelativeLayout>
